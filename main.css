@@ -1,0 +1,94 @@
+/* CUSTOM VARIABLES */
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-gray: #eee;
+  --color-dark-gray: #222831;
+}
+
+/* GLOBAL STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  font-family: inherit;
+  user-select: none;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* MAIN STYLING */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container__counter {
+  width: 45rem;
+  border: 1px solid var(--color-gray);
+  padding: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.container__counter > * {
+  margin-bottom: 2rem;
+}
+
+.container__count {
+  font-size: 4rem;
+  padding: 0rem 1rem;
+}
+
+.container__count:hover {
+  cursor: pointer;
+}
+
+.container__button button {
+  padding: 1rem;
+  margin: 0rem 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+button.container__button--generate {
+  background-color: limegreen;
+  font-weight: bold;
+}
+
+button.container__button--generate:hover {
+  transform: scale(1.04);
+}
